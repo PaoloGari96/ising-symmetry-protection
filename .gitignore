@@ -182,3 +182,10 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Extension (branch extension-symmetry-protection):
+# large Monte Carlo configuration files are regenerated from the seeds recorded in results/cfg_*.log
+results/cfg_*.npz
+results/*.done
+# keep the printed result tables (overrides the *.log rule above)
+!results/*.log

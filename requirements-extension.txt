@@ -1,0 +1,6 @@
+# Extension pipeline (src/isingflow, scripts/, tests/). Versions used for the reported runs in parentheses.
+numpy>=1.24      # (2.5.3)
+scipy>=1.10      # (1.18.1)  sparse exact diagonalization, root finding
+numba>=0.58      # (0.68.0)  Monte Carlo kernels and pseudo-likelihood sums
+matplotlib>=3.7  # (3.11.2)  figures
+# optional: jax[cpu] for the cross-check against the original code in tests/test_pipeline.py

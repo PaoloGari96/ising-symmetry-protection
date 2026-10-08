@@ -1,0 +1,2 @@
+{"L": 120, "K": [0.44068679350977147], "h": 0.0003, "N": 3000, "skip": 2.0, "therm": 500.0, "seed": 34, "steps_per_sweep": 2.666, "mean_cluster": 5824.2, "acceptance": 0.4094, "algorithm": "Wolff single-cluster, fixed number of moves per saved config; field via cluster-flip acceptance min(1, exp(-2 h s |C|))", "seconds": 7.249215126037598}
+<m>=+0.5850 <m^2>=0.3637 <|m|>=0.5940

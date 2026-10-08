@@ -1,0 +1,13 @@
+L=4 exact <m2>,<m4> = 0.76136,0.66569   Wolff = 0.76118,0.66548
+b=1 theta     : [ 4.4e-01 -1.0e-04 -3.1e-04  3.7e-04  3.8e-04 -1.4e-04]
+b=1 theta err : [0.00097 0.00084 0.0006  0.00027 0.00114 0.00023]
+pulls         : [-0.71 -0.12 -0.52  1.38  0.33 -0.61]
+A(b=1) diag   : [0.963 1.232 0.661 1.188 1.539 0.685] +- [0.15  0.338 0.602 0.409 1.012 0.796]
+max |A-I|/err : 2.42
+Theta basis: A[h3,O3] = 1.106 +- 1.72 (identity would be 1)
+symmetrised b=1: odd couplings [-8.12581053e-19  1.13696924e-19]  max|A_even,odd|=5.4e-15 max|A_odd,even|=2.1e-15
+symmetrised b=2: odd couplings [-7.80961374e-19  1.58807345e-19]  max|A_even,odd|=9.0e-15 max|A_odd,even|=3.1e-15
+symmetrised b=3: odd couplings [-1.39333087e-19 -1.22805220e-19]  max|A_even,odd|=1.9e-14 max|A_odd,even|=8.2e-15
+original-code gradient at our optimum: 3.4203523963722345e-12  loss 0.2650556606462859  ours 0.2650556606462665
+ALL TESTS PASSED (41s)
+exit 0

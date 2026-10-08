@@ -8,7 +8,7 @@ Extension of [Di Carlo's IsingCG](https://github.com/lucadic/IsingCG) to track Z
 
 This repository is an extension of:
 
-> L. Di Carlo, *Coarse-graining the Ising model with the inverse Ising problem*, arXiv:2401.04811 (2024).
+> L. Di Carlo, *Monte Carlo, blocking, and inference: How to measure the renormalization group flow*, arXiv:2401.04811 (2024), doi:10.1119/5.0179365.
 > Code: https://github.com/lucadic/IsingCG
 
 The base method — Monte Carlo sampling, Kadanoff block-spin transformation, and pseudo-likelihood inverse Ising inference — is entirely due to Di Carlo. The present repository modifies two of his files (IsingRG.py and MeasureRGFlow.ipynb) to include Z2-odd operators in both the forward simulation and the inverse inference.
@@ -64,6 +64,47 @@ where tau_n^t = sigma_n(t) / (1 + exp(2 H_n sigma_n(t))).
 - All simulation and inference calls updated to pass h and h3.
 - Loss landscapes plotted in the (K1, h), (K1, h3), and (h, h3) planes.
 - RG flow tracked for h0 in {0, 1e-5, 1e-4, 1e-3, 5e-3} with h3 = 0. Each h0 value was run as a separate notebook (one per subfolder under `notebooks/runs/`) since the full run required Google Colab's compute rather than a local machine. `notebooks/MeasureRGFlow_odd_operators_template.ipynb` is the generic version (edit the `h` value near the top and rerun) used to produce each of these runs.
+
+---
+
+## Extension: protected versus unprotected relevant operators (branch `extension-symmetry-protection`)
+
+This branch adds an independent, tested pipeline (`src/isingflow/`, `scripts/`, `tests/`) that turns the
+lattice study into a quantitative test of naturalness on both sides: the Z2-odd magnetic operator
+(protected) and the Z2-even thermal operator (unprotected, the lattice analogue of a scalar mass term).
+Nothing in the original code, notebooks or figures was modified. Details, numbers and caveats are in
+`RESEARCH_LOG.md`; derivations are in `notes/theory_notes.md`; figures are in `figures/extension/`.
+
+**What changed in the method.**
+
+| Original pipeline | Extension | Why |
+|---|---|---|
+| Metropolis from an all-up start, one chain per h0, one seed | Wolff cluster algorithm (field via cluster-flip acceptance), random start, replicas, measured autocorrelation | the original h0 = 0 chains never leave m > 0 |
+| 4-term three-spin field Theta (Eq. A.6) | exact local field Phi = dO3/ds (12 terms); Theta kept for comparison | Theta is not the gradient of any Hamiltonian |
+| 7000 fixed gradient-descent steps | exact Newton steps to a decrement < 1e-15 per site | the loss is concave; the optimum is unique |
+| no error bars | 20-block jackknife, checked against replicas and split halves | — |
+| K = (0.203, 0.078) "near-critical" | Binder crossings give K1c = 0.2059(2) at K2 = 0.078; runs also at exact criticality | the original point is paramagnetic |
+
+**Main results.** Inferred odd couplings vanish within errors for ergodic Z2-symmetric data and exactly for
+symmetrized data; the thesis offsets come from single-sign samples combined with basis truncation.
+MCRG gives a block-diagonal linearized RG with y_h = 1.8748(5) (exact 15/8) and y_t = 0.99(1) (exact 1).
+The critical coupling moves with every even coupling (fluctuation shift 0.11-0.19 from mean field), while
+h_c = 0 for all of them. Exact diagonalization of Kramers-Wannier self-dual chains shows that duality pins
+the transition (|g_c - 1| < 5e-4) while duality-breaking couplings move it linearly.
+
+**Reproduce.**
+
+    pip install -r requirements-extension.txt
+    python tests/test_pipeline.py                      # validation suite (needs jax for the last test)
+    python scripts/locate_critical_point.py            # Binder scans (results/critical_point_scan.*)
+    python scripts/generate_wolff.py --L 240 --K 0.203 0.078 --h 0 --N 4000 --seed 12 --out results/cfg_thesis_L240_h0.npz
+    python scripts/analyse_protection.py results/cfg_thesis_L240_h0.npz results/prot_thesis_L240_h0.npz --bs 2 3 4 5 6 8
+    python scripts/run_mcrg.py results/cfg_nn_L256_h0.npz results/mcrg_nn_L256.npz --nlev 4
+    python scripts/kw_protection_scan.py --Nmax 16
+    bash scripts/queue_generate.sh; bash scripts/queue_analysis.sh; bash scripts/queue_robustness.sh
+
+Every output file in `results/` stores its parameters and seeds; the `.log` next to it is the printed table.
+Large configuration files (`results/cfg_*.npz`) can be regenerated from the seeds in their metadata.
 
 ---
 
@@ -146,8 +187,9 @@ If you use this code, please cite Di Carlo's original work:
 
     @article{dicarlo2024,
       author  = {Di Carlo, Luca},
-      title   = {Coarse-graining the Ising model with the inverse Ising problem},
+      title   = {Monte Carlo, blocking, and inference: How to measure the renormalization group flow},
       year    = {2024},
+      doi     = {10.1119/5.0179365},
       url     = {https://arxiv.org/abs/2401.04811}
     }
 

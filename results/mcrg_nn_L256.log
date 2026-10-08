@@ -1,0 +1,49 @@
+operators computed (121s); N=8000, L=256
+   left eigvec (lead, y=1.881): nn:+0.000 diag:+0.000 x2:+0.000 plaq:+0.000 knight:+0.001 m:+0.301 tri:+1.000 line3:+0.500 star5:+0.199
+   left eigvec (second, y=0.954): nn:+0.242 diag:+0.346 x2:+0.445 plaq:+0.121 knight:+1.000 m:+0.001 tri:-0.000 line3:+0.000 star5:-0.002
+level 0->1: even y = [ 0.954 -0.864 -2.261] +- [0.01  0.065 0.757] | odd y = [ 1.881 -0.384] +- [0.    0.043] | cross pulls: rms=0.98 max=1.86
+   even trunc 1: y1=0.9014+-0.0082
+   even trunc 2: y1=0.9489+-0.0092
+   even trunc 3: y1=0.9478+-0.0095
+   even trunc 4: y1=0.9500+-0.0095
+   even trunc 5: y1=0.9539+-0.0103
+   odd  trunc 1: y1=1.8812+-0.0001
+   odd  trunc 2: y1=1.8804+-0.0001
+   odd  trunc 3: y1=1.8806+-0.0001
+   odd  trunc 4: y1=1.8807+-0.0002
+   left eigvec (lead, y=1.876): nn:-0.000 diag:-0.000 x2:-0.000 plaq:+0.000 knight:-0.000 m:+0.304 tri:+1.000 line3:+0.498 star5:+0.201
+   left eigvec (second, y=0.991): nn:+0.262 diag:+0.350 x2:+0.457 plaq:+0.146 knight:+1.000 m:-0.000 tri:-0.000 line3:-0.000 star5:-0.000
+level 1->2: even y = [ 0.991 -0.779 -1.855] +- [0.009 0.08  0.167] | odd y = [ 1.876 -0.371] +- [0.    0.052] | cross pulls: rms=1.43 max=2.76
+   even trunc 1: y1=0.9681+-0.0071
+   even trunc 2: y1=0.9952+-0.0077
+   even trunc 3: y1=0.9913+-0.0084
+   even trunc 4: y1=0.9918+-0.0083
+   even trunc 5: y1=0.9909+-0.0089
+   odd  trunc 1: y1=1.8763+-0.0002
+   odd  trunc 2: y1=1.8762+-0.0002
+   odd  trunc 3: y1=1.8762+-0.0002
+   odd  trunc 4: y1=1.8763+-0.0002
+   left eigvec (lead, y=1.875): nn:-0.000 diag:-0.000 x2:-0.000 plaq:-0.000 knight:-0.000 m:+0.305 tri:+1.000 line3:+0.497 star5:+0.201
+   left eigvec (second, y=1.007): nn:+0.266 diag:+0.350 x2:+0.459 plaq:+0.151 knight:+1.000 m:+0.000 tri:-0.002 line3:-0.001 star5:-0.000
+level 2->3: even y = [ 1.007 -1.104 -1.965] +- [0.009 0.158 0.228] | odd y = [ 1.875 -0.337] +- [0.    0.045] | cross pulls: rms=0.81 max=1.85
+   even trunc 1: y1=0.9749+-0.0103
+   even trunc 2: y1=1.0053+-0.0087
+   even trunc 3: y1=1.0062+-0.0089
+   even trunc 4: y1=1.0062+-0.0089
+   even trunc 5: y1=1.0068+-0.0091
+   odd  trunc 1: y1=1.8745+-0.0003
+   odd  trunc 2: y1=1.8746+-0.0003
+   odd  trunc 3: y1=1.8746+-0.0003
+   odd  trunc 4: y1=1.8747+-0.0003
+   left eigvec (lead, y=1.875): nn:-0.001 diag:-0.001 x2:-0.001 plaq:-0.000 knight:-0.001 m:+0.305 tri:+1.000 line3:+0.497 star5:+0.201
+   left eigvec (second, y=0.976): nn:+0.261 diag:+0.346 x2:+0.459 plaq:+0.148 knight:+1.000 m:+0.000 tri:-0.001 line3:+0.002 star5:+0.001
+level 3->4: even y = [ 0.976 -0.777 -2.311] +- [0.013 0.087 0.614] | odd y = [ 1.875 -0.389] +- [0.    0.047] | cross pulls: rms=0.72 max=1.61
+   even trunc 1: y1=0.9534+-0.0122
+   even trunc 2: y1=0.9824+-0.0118
+   even trunc 3: y1=0.9771+-0.0141
+   even trunc 4: y1=0.9772+-0.0142
+   even trunc 5: y1=0.9761+-0.0127
+   odd  trunc 1: y1=1.8744+-0.0005
+   odd  trunc 2: y1=1.8748+-0.0005
+   odd  trunc 3: y1=1.8748+-0.0005
+   odd  trunc 4: y1=1.8748+-0.0005

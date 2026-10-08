@@ -1,0 +1,55 @@
+results/cfg_nn_L120_h0.npz: h0=0 b=2 done
+results/cfg_nn_L120_h0.npz: h0=0 b=3 done
+results/cfg_nn_L120_h0.npz: h0=0 b=4 done
+results/cfg_nn_L120_h0.npz: h0=0 b=5 done
+results/cfg_nn_L120_h0.npz: h0=0 b=6 done
+results/cfg_nn_L120_h1e-5.npz: h0=1e-05 b=2 done
+results/cfg_nn_L120_h1e-5.npz: h0=1e-05 b=3 done
+results/cfg_nn_L120_h1e-5.npz: h0=1e-05 b=4 done
+results/cfg_nn_L120_h1e-5.npz: h0=1e-05 b=5 done
+results/cfg_nn_L120_h1e-5.npz: h0=1e-05 b=6 done
+results/cfg_nn_L120_h3e-5.npz: h0=3e-05 b=2 done
+results/cfg_nn_L120_h3e-5.npz: h0=3e-05 b=3 done
+results/cfg_nn_L120_h3e-5.npz: h0=3e-05 b=4 done
+results/cfg_nn_L120_h3e-5.npz: h0=3e-05 b=5 done
+results/cfg_nn_L120_h3e-5.npz: h0=3e-05 b=6 done
+results/cfg_nn_L120_h1e-4.npz: h0=0.0001 b=2 done
+results/cfg_nn_L120_h1e-4.npz: h0=0.0001 b=3 done
+results/cfg_nn_L120_h1e-4.npz: h0=0.0001 b=4 done
+results/cfg_nn_L120_h1e-4.npz: h0=0.0001 b=5 done
+results/cfg_nn_L120_h1e-4.npz: h0=0.0001 b=6 done
+results/cfg_nn_L120_h3e-4.npz: h0=0.0003 b=2 done
+results/cfg_nn_L120_h3e-4.npz: h0=0.0003 b=3 done
+results/cfg_nn_L120_h3e-4.npz: h0=0.0003 b=4 done
+results/cfg_nn_L120_h3e-4.npz: h0=0.0003 b=5 done
+results/cfg_nn_L120_h3e-4.npz: h0=0.0003 b=6 done
+results/cfg_nn_L120_h1e-3.npz: h0=0.001 b=2 done
+results/cfg_nn_L120_h1e-3.npz: h0=0.001 b=3 done
+results/cfg_nn_L120_h1e-3.npz: h0=0.001 b=4 done
+results/cfg_nn_L120_h1e-3.npz: h0=0.001 b=5 done
+results/cfg_nn_L120_h1e-3.npz: h0=0.001 b=6 done
+results/cfg_nn_L120_h3e-3.npz: h0=0.003 b=2 done
+results/cfg_nn_L120_h3e-3.npz: h0=0.003 b=3 done
+results/cfg_nn_L120_h3e-3.npz: h0=0.003 b=4 done
+results/cfg_nn_L120_h3e-3.npz: h0=0.003 b=5 done
+results/cfg_nn_L120_h3e-3.npz: h0=0.003 b=6 done
+b=2 phi   h : c (per unit m) = -0.0408+-0.0011 | R (per 1e-3 of h0) = +0.0048+-0.0031 | const +0.00016 | chi2/dof 80/39
+b=2 phi   h3: c (per unit m) = +0.0117+-0.0002 | R (per 1e-3 of h0) = +0.0001+-0.0005 | const +0.00005 | chi2/dof 79/39
+b=2 theta h : c (per unit m) = -0.0082+-0.0009 | R (per 1e-3 of h0) = +0.0022+-0.0030 | const +0.00013 | chi2/dof 196/39
+b=2 theta h3: c (per unit m) = +0.0163+-0.0003 | R (per 1e-3 of h0) = -0.0002+-0.0006 | const +0.00014 | chi2/dof 50/39
+b=3 phi   h : c (per unit m) = -0.0629+-0.0019 | R (per 1e-3 of h0) = +0.0059+-0.0059 | const -0.00030 | chi2/dof 115/39
+b=3 phi   h3: c (per unit m) = +0.0192+-0.0005 | R (per 1e-3 of h0) = -0.0010+-0.0012 | const -0.00003 | chi2/dof 164/39
+b=3 theta h : c (per unit m) = -0.0093+-0.0020 | R (per 1e-3 of h0) = -0.0000+-0.0074 | const -0.00079 | chi2/dof 310/39
+b=3 theta h3: c (per unit m) = +0.0292+-0.0007 | R (per 1e-3 of h0) = -0.0029+-0.0015 | const -0.00011 | chi2/dof 98/39
+b=4 phi   h : c (per unit m) = -0.0609+-0.0039 | R (per 1e-3 of h0) = +0.0183+-0.0141 | const -0.00016 | chi2/dof 186/39
+b=4 phi   h3: c (per unit m) = +0.0228+-0.0007 | R (per 1e-3 of h0) = +0.0022+-0.0017 | const -0.00056 | chi2/dof 161/39
+b=4 theta h : c (per unit m) = -0.0066+-0.0036 | R (per 1e-3 of h0) = +0.0226+-0.0130 | const -0.00187 | chi2/dof 350/39
+b=4 theta h3: c (per unit m) = +0.0333+-0.0011 | R (per 1e-3 of h0) = +0.0026+-0.0022 | const -0.00059 | chi2/dof 105/39
+b=5 phi   h : c (per unit m) = -0.0526+-0.0068 | R (per 1e-3 of h0) = +0.0096+-0.0202 | const +0.00071 | chi2/dof 281/39
+b=5 phi   h3: c (per unit m) = +0.0248+-0.0008 | R (per 1e-3 of h0) = +0.0058+-0.0019 | const -0.00084 | chi2/dof 91/39
+b=5 theta h : c (per unit m) = -0.0007+-0.0049 | R (per 1e-3 of h0) = +0.0344+-0.0217 | const -0.00100 | chi2/dof 417/39
+b=5 theta h3: c (per unit m) = +0.0371+-0.0011 | R (per 1e-3 of h0) = +0.0094+-0.0024 | const -0.00126 | chi2/dof 53/39
+b=6 phi   h : c (per unit m) = -0.0573+-0.0083 | R (per 1e-3 of h0) = +0.0480+-0.0381 | const +0.00075 | chi2/dof 351/39
+b=6 phi   h3: c (per unit m) = +0.0268+-0.0008 | R (per 1e-3 of h0) = +0.0048+-0.0024 | const +0.00014 | chi2/dof 94/39
+b=6 theta h : c (per unit m) = -0.0023+-0.0063 | R (per 1e-3 of h0) = +0.0188+-0.0314 | const +0.00039 | chi2/dof 462/39
+b=6 theta h3: c (per unit m) = +0.0396+-0.0012 | R (per 1e-3 of h0) = +0.0047+-0.0032 | const +0.00035 | chi2/dof 68/39
