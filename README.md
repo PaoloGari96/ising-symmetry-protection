@@ -72,8 +72,11 @@ where tau_n^t = sigma_n(t) / (1 + exp(2 H_n sigma_n(t))).
 This branch adds an independent, tested pipeline (`src/isingflow/`, `scripts/`, `tests/`) that turns the
 lattice study into a quantitative test of naturalness on both sides: the Z2-odd magnetic operator
 (protected) and the Z2-even thermal operator (unprotected, the lattice analogue of a scalar mass term).
-Nothing in the original code, notebooks or figures was modified. Details, numbers and caveats are in
-`RESEARCH_LOG.md`; derivations are in `notes/theory_notes.md`; figures are in `figures/extension/`.
+Nothing in the original code, notebooks or figures was modified. The full write-up (audit of the thesis and
+the code, research plan, results, robustness checks, interpretation and recommended thesis changes) is
+[`reports/research_report_symmetry_protection.pdf`](reports/research_report_symmetry_protection.pdf).
+Details, numbers and caveats are in `RESEARCH_LOG.md`; derivations are in `notes/theory_notes.md`; figures
+are in `figures/extension/`.
 
 **What changed in the method.**
 

@@ -4,7 +4,7 @@ Concise record of what was tested, how, and what was learned. All work was done 
 session on a 2-core machine (Python 3.13, numpy 2.5, numba 0.68, scipy 1.18). Every run is reproducible
 from `scripts/` with the seeds stored in each output's metadata; the `.log` next to each `results/*.npz`
 is the table the script printed. Derivations are in `notes/theory_notes.md`. The full write-up (audit,
-plan, results, interpretation, recommended thesis changes) is the report delivered with this branch.
+plan, results, interpretation, recommended thesis changes) is `reports/research_report_symmetry_protection.pdf`.
 
 Notation. Model H = -sum_d K_d S_d - h M - h3 O3 on an L x L torus (S_d: pair sums at Manhattan distance d,
 O3: L-shaped triplets). "NN at Kc" = nearest-neighbour model at Kc = ln(1+sqrt 2)/2 = 0.440687.
